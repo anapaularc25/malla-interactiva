@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .materia {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .materia:hover {
+      background-color: #d0f0ff;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Malla Curricular Interactiva</h1>
+
+<div class="grid">
+  <div class="materia" onclick="alert('Contenidos de Matemática')">Matemática</div>
+  <div class="materia" onclick="alert('Contenidos de Historia')">Historia</div>
+  <div class="materia" onclick="alert('Contenidos de Lengua')">Lengua</div>
+  <div class="materia" onclick="alert('Contenidos de Física')">Física</div>
+  <div class="materia" onclick="alert('Contenidos de Filosofía')">Filosofía</div>
+  <div class="materia" onclick="alert('Contenidos de Proyecto Final')">Proyecto Final</div>
+</div>
+
+</body>
+</html>
