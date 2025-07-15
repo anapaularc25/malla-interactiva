@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Malla Interactiva</title>
+  <title>Malla Interactiva – Contador Público</title>
   <style>
     body {
       font-family: sans-serif;
@@ -12,37 +12,95 @@
     h1 {
       text-align: center;
     }
+    .año {
+      margin-top: 40px;
+    }
+    .año h2 {
+      color: #004080;
+    }
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
     }
     .materia {
       background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       cursor: pointer;
-      transition: transform 0.2s ease;
+      transition: 0.2s;
+      text-align: center;
     }
     .materia:hover {
-      background-color: #d0f0ff;
+      background-color: #d0eaff;
       transform: scale(1.03);
     }
   </style>
 </head>
 <body>
 
-<h1>Malla Curricular Interactiva</h1>
+<h1>Malla Curricular Interactiva – Contador Público</h1>
 
-<div class="grid">
-  <div class="materia" onclick="alert('Contenidos de Matemática')">Matemática</div>
-  <div class="materia" onclick="alert('Contenidos de Historia')">Historia</div>
-  <div class="materia" onclick="alert('Contenidos de Lengua')">Lengua</div>
-  <div class="materia" onclick="alert('Contenidos de Física')">Física</div>
-  <div class="materia" onclick="alert('Contenidos de Filosofía')">Filosofía</div>
-  <div class="materia" onclick="alert('Contenidos de Proyecto Final')">Proyecto Final</div>
+<div class="año">
+  <h2>1° Año</h2>
+  <div class="grid">
+    <div class="materia" onclick="alert('Contabilidad Básica')">Contabilidad Básica</div>
+    <div class="materia" onclick="alert('Matemática I')">Matemática I</div>
+    <div class="materia" onclick="alert('Instituciones de Derecho Público')">Derecho Público</div>
+    <div class="materia" onclick="alert('Administración General')">Administración General</div>
+    <div class="materia" onclick="alert('Economía')">Economía</div>
+    <div class="materia" onclick="alert('Introducción a la Ciencia Política')">Ciencia Política</div>
+  </div>
+</div>
+
+<div class="año">
+  <h2>2° Año</h2>
+  <div class="grid">
+    <div class="materia" onclick="alert('Contabilidad Intermedia')">Contabilidad Intermedia</div>
+    <div class="materia" onclick="alert('Matemática II')">Matemática II</div>
+    <div class="materia" onclick="alert('Derecho Privado I')">Derecho Privado I</div>
+    <div class="materia" onclick="alert('Microeconomía')">Microeconomía</div>
+    <div class="materia" onclick="alert('Estadística I')">Estadística I</div>
+    <div class="materia" onclick="alert('Sociología')">Sociología</div>
+  </div>
+</div>
+
+<div class="año">
+  <h2>3° Año</h2>
+  <div class="grid">
+    <div class="materia" onclick="alert('Contabilidad Superior')">Contabilidad Superior</div>
+    <div class="materia" onclick="alert('Derecho Privado II')">Derecho Privado II</div>
+    <div class="materia" onclick="alert('Macroeconomía')">Macroeconomía</div>
+    <div class="materia" onclick="alert('Estadística II')">Estadística II</div>
+    <div class="materia" onclick="alert('Matemática Financiera')">Matemática Financiera</div>
+    <div class="materia" onclick="alert('Derecho del Trabajo y de la Seguridad Social')">Derecho Laboral</div>
+  </div>
+</div>
+
+<div class="año">
+  <h2>4° Año</h2>
+  <div class="grid">
+    <div class="materia" onclick="alert('Sistemas Administrativos')">Sistemas Administrativos</div>
+    <div class="materia" onclick="alert('Costos')">Costos</div>
+    <div class="materia" onclick="alert('Derecho Tributario')">Derecho Tributario</div>
+    <div class="materia" onclick="alert('Finanzas Públicas')">Finanzas Públicas</div>
+    <div class="materia" onclick="alert('Teoría Contable')">Teoría Contable</div>
+    <div class="materia" onclick="alert('Administración Financiera')">Admin. Financiera</div>
+  </div>
+</div>
+
+<div class="año">
+  <h2>5° Año</h2>
+  <div class="grid">
+    <div class="materia" onclick="alert('Auditoría')">Auditoría</div>
+    <div class="materia" onclick="alert('Régimen Impositivo')">Régimen Impositivo</div>
+    <div class="materia" onclick="alert('Ética Profesional')">Ética Profesional</div>
+    <div class="materia" onclick="alert('Práctica Profesional')">Práctica Profesional</div>
+    <div class="materia" onclick="alert('Legislación Aplicada')">Legislación Aplicada</div>
+    <div class="materia" onclick="alert('Seminario Final')">Seminario Final</div>
+  </div>
 </div>
 
 </body>
